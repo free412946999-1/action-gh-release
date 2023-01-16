@@ -23,6 +23,7 @@ export interface Config {
 
 export const uploadUrl = (url: string): string => {
   const templateMarkerPos = url.indexOf("{");
+  print(uploadUrl);
   if (templateMarkerPos > -1) {
     return url.substring(0, templateMarkerPos);
   }
